@@ -18,6 +18,7 @@ function pageload(){
 }
 
 function resizewindowres(x){
+    console.log(this.x);
     if(x.matches){
         defaultresX = 800;
         defaultresY = 450;
@@ -31,8 +32,14 @@ function resizewindowres(x){
     else if(x2.matches && !x.matches){
         resizewindowres2(x2);
     }
+    else{
+        defaultresX = 1600;
+        defaultresY = 900;
+        reloadcurrentWork();
+    }
 }
 function resizewindowres2(x2){
+    console.log(this.x2);
     if(x2.matches){
         defaultresX = 400;
         defaultresY = 225;
@@ -45,6 +52,11 @@ function resizewindowres2(x2){
     }
     else if(!x2.matches && x.matches){
         resizewindowres(x);
+    }
+    else{
+        defaultresX = 1600;
+        defaultresY = 900;
+        reloadcurrentWork();
     }
 }
 

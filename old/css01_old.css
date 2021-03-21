@@ -1,0 +1,187 @@
+body
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:ghostwhite;
+}
+h1
+{
+    text-align: center;
+    color: white;
+    background-color: lightseagreen;
+}
+.menubut
+{
+    
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    /* background-image: url('menu_icon.png'); */
+}
+.menuicon
+{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    opacity: 0.7;
+}
+.intro
+{
+    padding-left: 5%;
+}
+.name
+{
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    padding-left: 250px;
+    padding-top: 100px;
+}
+.surname
+{
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 400px;
+    padding-top: 220px;
+}
+.career
+{
+    position: absolute;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 20px;
+    padding-left: 250px;
+    padding-top: 370px;
+}
+.university
+{
+    position: absolute;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 20px;
+    padding-left: 450px;
+    padding-top: 400px;
+}
+.profilepic
+{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 1000px;
+    padding-top: 70px;
+}
+#profileimg
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 20%;
+    border: 15px double rgb(255, 137, 58);
+}
+#rightpic
+{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 1100px;
+    width: 300px;
+    height: 730px;
+}
+.backgroundtext
+{
+    background-color: lightseagreen;
+    color: white;
+}
+.linecolor
+{
+    color: lightseagreen;
+}
+.information
+{
+    padding-top: 600px;
+}
+.education
+{
+    padding-top: 250px;
+}
+.center
+{
+    text-align: center;
+    margin: auto;
+}
+.centertable, table
+{
+    margin-left: 400px;
+    margin-top: 150px;
+    border-collapse: collapse;
+    border: 7px dashed rgb(255, 137, 58);
+}
+.centertable, td
+{
+    width: 500px;
+    text-align: left;
+    padding: 20px;
+}
+.centertable, th
+{
+    padding: 20px;
+    text-align: right;
+}
+.centertable, td,th
+{
+    font-size: 20px;
+}
+.introbut
+{
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}
+.githubbut
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
+    margin-top: 500px;
+    margin-left: -1100px;
+}
+.githubbut:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(77, 77, 77);
+}
+.bitbucketbut
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 102, 197);
+    margin-top: 500px;
+    margin-left: -900px;
+}
+.bitbucketbut:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 132, 255);
+}
+.centerul
+{
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 1100px;
+    margin-bottom: 200px;
+    font-size: 20px;
+    border: 7px dashed orange;
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-around;
+}

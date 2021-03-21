@@ -1,0 +1,506 @@
+h2{
+    background-color: teal;
+    color: white;
+    font-size: 32px;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h1{
+    background-color: teal;
+    color: white;
+}
+#flexcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+#gridcontainer 
+{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+#grid0{
+    grid-column: 1 / span 1;
+}
+#grid1{
+    width: 1100px;
+    padding: 50px;
+    grid-column: 2 / span 1;
+    background-color: rgba(0, 128, 128, 0.1);
+}
+#grid2{
+    grid-column: 3 / span 1;
+}
+#grid3{
+    width: 1700px;
+    padding: 50px;
+    grid-column: 2 / span 1;
+    background-color: rgba(0, 128, 128, 0.1);
+}
+#header{
+    overflow:hidden;
+    background-color: teal;
+}
+#header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+#header a:hover {
+    background-color: aqua;
+    color: black;
+}
+#header a.active {
+    background-color:turquoise;
+    color: white;
+}
+/* "Top navigation bar" ref https://www.w3schools.com/howto/howto_js_topnav.asp */
+
+#footer{
+    padding: 1px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:teal;
+    color: white;
+    text-align: right;
+}
+#firstname{
+    font-size: 80px;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-left: 250px;
+}
+#surname{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 400px;
+}
+#career{
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 250px;
+}
+#careercolor{
+    color: rgba(128, 128, 128, 0.7);
+}
+#university{
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 450px;
+}
+#universitycolor{
+    color: rgba(128, 128, 128, 0.7);
+}
+#namebgcolor{
+    background-color:teal;
+    color: white;
+}
+#profileimg
+{
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    border: 15px double turquoise;
+    background-color: white;
+}
+#profilepicpos
+{
+    position: absolute;
+    padding-left: 1100px;
+    padding-top: 7px;
+}
+#maincontent{
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.boldtxt{
+    font-weight: bold;
+}
+.headertxt{
+    font-weight: bold;
+    font-size: 20px;
+}
+.bigtopichead{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+.centertxt{
+    text-align: center;
+}
+table, td{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    padding: 10px;
+    width: 800px;
+    margin: auto;
+}
+.button{
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:deepskyblue;
+    border: none;
+    color: white;
+}
+.githubbut
+{
+    background-color: rgb(39, 39, 39);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.githubbut:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(77, 77, 77);
+}
+.bitbucketbut
+{
+    background-color: rgb(0, 102, 197);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.bitbucketbut:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 132, 255);
+}
+#skillcontent{
+    text-align: center;
+}
+.portselect{
+    padding-left: 100px;
+    width: 500px;
+    overflow:hidden;
+}
+.portselect a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration:none;
+    font-size: 16px;
+    background-color: teal;
+}
+.portselect a:hover {
+    background-color: aqua;
+    color: black;
+}
+.portselect a.active {
+    background-color:turquoise;
+    color: white;
+}
+#portcontainer {
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#portshowarea{
+    background-color: rgb(43, 43, 43);
+    position: relative;
+    width: 1600px;
+    height: 900px;
+    
+    border: 3px solid ghostwhite;
+}
+
+@media only screen and (max-width: 1600px)
+{
+    #portshowarea{
+        background-color: rgb(43, 43, 43);
+        position: relative;
+        width: 800px;
+        height: 450px;
+        
+        border: 3px solid ghostwhite;
+    }
+    #grid3{
+        width: 900px;
+        padding: 50px;
+        grid-column: 2 / span 1;
+        background-color: rgba(0, 128, 128, 0.1);
+    }
+}
+@media only screen and (max-width: 800px)
+{
+    #portshowarea{
+        background-color: rgb(43, 43, 43);
+        position: relative;
+        width: 400px;
+        height: 225px;
+        
+        border: 3px solid ghostwhite;
+    }
+    .portselect a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px;
+        text-decoration:none;
+        font-size: 12px;
+        background-color: teal;
+    }
+    #grid3{
+        width: 500px;
+        padding: 50px;
+        grid-column: 2 / span 1;
+        background-color: rgba(0, 128, 128, 0.1);
+    }
+}
+@media only screen and (max-width: 1573px)
+{
+    #profileimg
+    {
+        width: 270px;
+        height: 270px;
+        border-radius: 20%;
+        border: 15px double turquoise;
+        background-color: white;
+    }
+    #profilepicpos
+    {
+        position: absolute;
+        padding-left: 850px;
+        padding-top: 10px;
+    }
+    #firstname{
+        font-size: 60px;
+        font-weight: bold;
+        padding-top: 100px;
+        padding-left: 250px;
+    }
+    #surname{
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 400px;
+    }
+    #career{
+        color: rgba(128, 128, 128, 0.7);
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 250px;
+    }
+    #university{
+        color: rgba(128, 128, 128, 0.7);
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 400px;
+    }
+    #maincontent{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h2{
+        background-color: teal;
+        color: white;
+        font-size: 28px;
+        padding-left: 5%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #grid1{
+        width: 900px;
+        padding: 50px;
+        grid-column: 2 / span 1;
+        background-color: rgba(0, 128, 128, 0.1);
+    }
+}
+@media only screen and (max-width: 1170px)
+{
+    #profileimg
+    {
+        width: 200px;
+        height: 200px;
+        border-radius: 20%;
+        border: 10px double turquoise;
+        background-color: white;
+    }
+    #profilepicpos
+    {
+        position: absolute;
+        padding-left: 730px;
+        padding-top: 10px;
+    }
+    #firstname{
+        font-size: 60px;
+        font-weight: bold;
+        padding-top: 70px;
+        padding-left: 250px;
+    }
+    #surname{
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 400px;
+    }
+    #career{
+        color: rgba(128, 128, 128, 0.7);
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 250px;
+    }
+    #university{
+        color: rgba(128, 128, 128, 0.7);
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 300px;
+    }
+    #maincontent{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h2{
+        background-color: teal;
+        color: white;
+        font-size: 28px;
+        padding-left: 5%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #grid1{
+        width: 700px;
+        padding: 50px;
+        grid-column: 2 / span 1;
+        background-color: rgba(0, 128, 128, 0.1);
+    }
+}
+@media only screen and (max-width: 970px)
+{
+    #profileimg
+    {
+        width: 200px;
+        height: 200px;
+        border-radius: 20%;
+        border: 10px double turquoise;
+        background-color: white;
+    }
+    #profilepicpos
+    {
+        position: absolute;
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+    #maincontent{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h2{
+        background-color: teal;
+        color: white;
+        font-size: 28px;
+        padding-left: 5%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #grid1{
+        width: 500px;
+        padding: 50px;
+        grid-column: 2 / span 1;
+        background-color: rgba(0, 128, 128, 0.1);
+    }
+    table, td{
+        border-collapse: collapse;
+        padding: 10px;
+        width: 600px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 750px)
+{
+    #profileimg
+    {
+        width: 200px;
+        height: 200px;
+        border-radius: 20%;
+        border: 10px double turquoise;
+        background-color: white;
+    }
+    #profilepicpos
+    {
+        position:relative;
+        margin: auto;
+        width: 50%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    #firstname{
+        font-size: 60px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 1%;
+    }
+    #surname{
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 10%;
+    }
+    #career{
+        color: rgba(128, 128, 128, 0.7);
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    #university{
+        color: rgba(128, 128, 128, 0.7);
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    #maincontent{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h2{
+        background-color: teal;
+        color: white;
+        font-size: 28px;
+        padding-left: 5%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #grid1{
+        width: 300px;
+        padding: 50px;
+        grid-column: 2 / span 1;
+        background-color: rgba(0, 128, 128, 0.1);
+    }
+    table, td{
+        border-collapse: collapse;
+        padding: 10px;
+        width: 300px;
+        margin: auto;
+    }
+}

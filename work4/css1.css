@@ -1,0 +1,215 @@
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bgcolor
+{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.title
+{
+    position: fixed;
+    top: -2%;
+    width: 100%;
+    background-color: rgb(255, 186, 96);
+    z-index: 1;
+}
+#mainImg
+{
+    border: 10px double palevioletred;
+    width: 30%;
+    height: 30%;
+}
+.ulcenter
+{
+    width: 200px;
+    margin: auto;
+}
+.centertext
+{
+    text-align: center;
+}
+.blodtext
+{
+    font-weight: bold;
+    background-color: orange;
+}
+.img10per
+{
+    width: 10%;
+    height: 10%;
+}
+.img20per
+{
+    width: 20%;
+    height: 20%;
+}
+.img50per
+{
+    width: 50%;
+    height: 50%;
+}
+.fleximgcon
+{
+    width: 300px;
+    height: 400px;
+}
+.fleximg
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fleximg > div
+{
+    width: auto;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 2px dotted  #68462e;
+    padding: auto;
+}
+/* unvisited link */
+a:link{
+    color: #001aff; 
+}  
+/* visited link */
+ a:visited{
+    color: #e100ff; 
+}  
+/* mouse over link */  
+ a:hover{ 
+    color: #0099ff; 
+}
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+#grid0
+{
+    background-color: rgb(255, 145, 0);
+    font-size: 20px;
+    padding: 20px;
+    grid-column: 1 / span 3;
+}
+#grid1
+{
+    background-color: rgb(255, 186, 96);
+    padding: 50px;
+    grid-column: 1 / span 1;
+}
+#grid2
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    grid-column: 2 / span 1;
+}
+#grid4
+{
+    background-color: rgb(255, 186, 96);
+    padding: 20px;
+    grid-column: 1 / span 3;
+}
+#grid5
+{
+    background-color: rgb(255, 145, 0);
+    grid-column: 1 / span 3;
+    text-align: right;
+}
+@media only screen and (max-width: 768px)
+{
+    #mainImg
+    {
+        border: 10px double palevioletred;
+        width: 70%;
+        height: 70%;
+    }
+    #grid0
+    {
+        background-color: rgb(255, 145, 0);
+        padding: 20px;
+        font-size: 15px;
+        grid-column: 2 / span 3;
+    }
+    #grid1
+    {
+        background-color: rgb(255, 186, 96);
+        padding: 20px;
+        grid-column: 1 / span 3;
+    }
+    .fleximgcon
+    {
+        width: 150px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 360px)
+{
+    .grid-container 
+    {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    body
+    {
+        font-size: 13px;
+    }
+    #grid0
+    {
+        background-color: rgb(255, 145, 0);
+        padding: 7px;
+        font-size: 10px;
+        grid-column: 2 / span 3;
+        text-align: center;
+    }
+    #grid1
+    {
+        background-color: rgb(255, 186, 96);
+        padding: 20px;
+        grid-column: 1 / span 3;
+    }
+    #grid2
+    {
+        background-color: rgba(255, 255, 255, 0.5);
+        grid-column: 2 / span 1;
+    }
+    #grid4
+    {
+        background-color: rgb(255, 186, 96);
+        padding: 20px;
+        grid-column: 1 / span 3;
+    }
+    #grid5
+    {
+        background-color: rgb(255, 145, 0);
+        grid-column: 1 / span 3;
+        padding-left: 10px;
+        text-align: right;
+    }
+    .fleximgcon
+    {
+        width: 100px;
+        height: 150px;
+    }
+    .fleximg
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fleximg > div
+    {
+        width: auto;
+        text-align: center;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border: 2px dotted  #68462e;
+        padding: auto;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="chat/chat_css.css">
+    <title>MiHoYo Wish List</title>
+</head>
+<body>
+    <div class="header">
+        <h1>MiHoYo Wish List</h1>
+    </div>
+    <div class="grid-container">
+        <div id="grid0">
+            <img src="chat/pic/ganyu.png" alt="">
+        </div>
+        <div id="grid1">
+            <p id="Chat1"></p>
+            <hr>
+            <p id="Chat2"></p>
+            <hr>
+            <p id="Chat3"></p>
+        </div>
+        <div id="grid2">
+            <img src="chat/pic/keqing.png" alt="">
+        </div>
+        <div id="grid3">
+            <textarea id="ChatInput" rows="4" cols="40"></textarea>
+             <br>
+            <input id="sendChat" type="submit" value="Sumit" onclick="Post()">
+            <input type="submit" value="Clear" onclick="Clear()">
+
+            <div>
+            <img src="chat/pic/hutao.png" alt="" id="imgfooter">
+            </div>
+        </div>
+    </div>
+    <script src="chat/chat_js.js"></script>
+</body>
+</html>

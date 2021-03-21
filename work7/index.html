@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="css1.css">
+    <title>Square Game</title>
+</head>
+<body id="main">
+    <div class="grid-container">
+        <div id="grid1">
+            <h1>Square Game!</h1>
+        </div>
+        <div id="grid0">
+            <img src="hot.png" alt="">
+        </div>
+        <div id="grid1">
+            <fieldset class="gamesetting">
+                <legend class="boldtxt">Game Setting</legend>
+                <div class="center">
+                    Number of box: <input type="text" name="numberbox" id="numberbox">
+                    <select name="boxcolor" id="boxcolor">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                    <button id="start">Start</button>
+                    <br>
+                    <br>
+                    <div id="timer">Timer: 0</div>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset class="gamearea">
+                <legend class="boldtxt">Game Area</legend>
+                <div id="game-container">
+                    <div id="game-layer">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="grid2">
+            <img src="hov.png" alt="">
+        </div>
+        <div id="grid1">
+            <img src="hutao.png" alt="">
+        </div>
+        <div id="grid1">
+            <br>
+            <div id="debug">
+
+            </div>
+        </div>
+    </div>
+    <script src="gamejs.js"></script>
+</body>
+</html>

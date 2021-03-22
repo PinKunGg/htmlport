@@ -2,6 +2,10 @@ window.onload = pageload;
 
 var x = window.matchMedia("(max-width: 1600px)");
 var x2 = window.matchMedia("(max-width: 800px)");
+
+var NavBar = document.getElementById("header");
+var VerNavBar = document.getElementById("dropdownheader");
+
 resizewindowres(x);
 x.addListener(resizewindowres);
 resizewindowres2(x2);
@@ -15,6 +19,8 @@ var currentWork = 0;
 function pageload(){
     work7();
     resizewindowres(x);
+    NavBar.style.display = "none";
+    VerNavBar.style.display = "block";
 }
 
 function resizewindowres(x){
@@ -61,23 +67,23 @@ function resizewindowres2(x2){
 }
 
 function work12() {
-    document.getElementById("content").innerHTML='<object type="text/html" data="work1/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML='<object type="text/html" data="work1/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     currentWork = 1;
 }
 function work34() {
-    document.getElementById("content").innerHTML='<object type="text/html" data="work4/chickenHw_2.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML='<object type="text/html" data="work4/chickenHw_2.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     currentWork = 2;
 }
 function work5() {
-    document.getElementById("content").innerHTML='<object type="text/html" data="work5/chat.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML='<object type="text/html" data="work5/chat.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     currentWork = 3;
 }
 function work6() {
-    document.getElementById("content").innerHTML='<object type="text/html" data="work6/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML='<object type="text/html" data="work6/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     currentWork = 4;
 }
 function work7() {
-    document.getElementById("content").innerHTML='<object type="text/html" data="work7/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML='<object type="text/html" data="work7/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     currentWork = 5;
 }
 

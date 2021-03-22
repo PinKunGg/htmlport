@@ -8,17 +8,26 @@
     <title>HTML PORTFOLIO</title>
 </head>
 <body>
+    <button onclick="GoTopFunction()" id="GoToTopButton" title="Go to top">^</button>
     <!-- HEADER -->
     <div id="header">
         <a href="index.html">Home</a>
         <a class="active" href="portfolio.html">Portfolio</a>
         <a href="#contact">Contact</a>
     </div>
-    <!-- MAIN CONTENT -->
-    <div>
-        <h1 class="bigtopichead">Portfolio</h1>
+    <div id="dropdownheader" class="dropdown">
+        <button class="dropbtn">Portfolio</button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
-    <div id="maincontent">
+    <!-- MAIN CONTENT -->
+    <div id="TitlePadding">
+        <h1 class="bigtopichead">Portfolio</h1>
+        <img src="portfolio/pic/code_pic_01.jpg" class="bgimg">
+    </div>
+    <div id="maincontentPort" class="contentcolor2">
         <div id="flexcontainer">
             <div id="gridcontainer">
                 <div id="grid3">
@@ -33,7 +42,7 @@
                     </div>
                     <div id="portcontainer">
                         <div id="portshowarea">
-                            <div id="content"></div>
+                            <div id="contentport"></div>
                         </div>
                     </div>
                 </div>

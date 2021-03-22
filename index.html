@@ -8,28 +8,55 @@
     <title>HTML PORTFOLIO</title>
 </head>
 <body>
+    <button onclick="GoTopFunction()" id="GoToTopButton" title="Go to top">^</button>
     <!-- HEADER -->
     <div id="header">
         <a class="active" href="index.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="#contact">Contact</a>
     </div>
-    <!-- INTRO -->
-    <div>
-        <div id="profilepicpos"><img src="portfolio/pic/profilepic.jpg" id="profileimg"></div>
-        <div id="firstname"><div id="namebgcolor">&nbsp NATTAPAT &nbsp</div></div>
-        <div id="surname"><div id="namebgcolor">&nbsp SURACHEEP &nbsp</div></div>
-        <div id="career"><div id="careercolor">Unity 2D & 3D Developer</div></div>
-        <div id="university"><div id="universitycolor">King Mongkut's University of Technology Thonbur (KMUTT)</div></div>
+    <div id="dropdownheader" class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
+    <!-- INTRO -->
+    <div id="grid-container">
+        <div id="gird4">
+            <div>
+                <video autoplay muted loop id="myVideo">
+                    <source src="portfolio/vdobg3.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="contentIntro">
+    <div id="contentBG">
+        <div id="flexcontainer">
+            <div id="grid-container">
+                <div id="grid1">
+                    <div>
+                        <div id="profilepicpos"><img src="portfolio/pic/profilepic.jpg" id="profileimg"></div>
+                        <div id="firstname"><div id="namebgcolor">&nbsp NATTAPAT &nbsp</div></div>
+                        <div id="surname"><div id="namebgcolor">&nbsp SURACHEEP &nbsp</div></div>
+                        <div id="career"><div id="careercolor">Unity 2D & 3D Developer</div></div>
+                        <div id="university"><div id="universitycolor">King Mongkut's University of Technology Thonbur (KMUTT)</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- MAIN CONTENT -->
-    <div id="maincontent">
+    <div id="maincontentHome">
         <!-- About Me -->
-        <h2>About Me</h2>
+        <div class="contentcolor1">
         <div id="flexcontainer">
             <div id="gridcontainer">
                 <div id="grid1">
-                    <div>
+                    <h2>About Me</h2>
+                    <div id="aboutmetxt">
                         <p>Hello my name is Nattapat Suracheep (Pin). I'm 3rd-year college student and I'm studying Game Development at Media Technology,</p>
                         <p>King Mongkut's University of Technology Thonburi. I like to create a video game, whether 2D or 3D.</p>
                         <p>I start learn how to create a game when I was in high school, my first game engine that I was use is Unity, and I have an experience with Unity engine for 3 years now.</p>
@@ -37,11 +64,13 @@
                 </div>
             </div>
         </div>
+        </div>
         <!-- Education / Experience -->
-        <h2>Education / Experience</h2>
+        <div class="contentcolor2">
         <div id="flexcontainer">
             <div id="grid-container">
                 <div id="grid1">
+                    <h2>Education / Experience</h2>
                     <table>
                         <tr>
                             <td class="headertxt">Education</th>
@@ -79,11 +108,13 @@
                 </div>
             </div>
         </div>
+        </div>
         <!-- Skill -->
-        <h2>Skills / Software Skills</h2>
+        <div class="contentcolor1">
         <div id="flexcontainer">
             <div id="grid-container">
                 <div id="grid1">
+                    <h2>Skills / Software Skills</h2>
                     <p class="headertxt centertxt">Skill</p>
                     <div id="skillcontent">
                     <p>C# Language</p>
@@ -114,11 +145,13 @@
                 </div>
             </div>
         </div>
+        </div>
         <!-- Hobby & Interests -->
-        <h2>Hobby / Interests</h2>
+        <div class="contentcolor2">
         <div id="flexcontainer">
             <div id="grid-container">
                 <div id="grid1">
+                    <h2>Hobby / Interests</h2>
                     <table>
                         <tr>
                             <td class="headertxt">Hobby</td>
@@ -157,10 +190,13 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
     <!-- FOOTER -->
     <div id="footer">
         <p>NATTAPAT SURACHEEP PORTFOLIO.</p>
+    </div>
+    </div>
     </div>
     <script src="mainjs.js"></script>
 </body>

@@ -16,50 +16,45 @@ var defaultresY = 900;
 
 var currentWork = 0;
 
-function pageload(){
+function pageload() {
     work7();
     resizewindowres(x);
     NavBar.style.display = "none";
     VerNavBar.style.display = "block";
 }
 
-function resizewindowres(x){
+function resizewindowres(x) {
     console.log(this.x);
-    if(x.matches){
+    if (x.matches) {
         defaultresX = 800;
         defaultresY = 450;
         reloadcurrentWork();
-    }
-    else if(!x.matches){
+    } else if (!x.matches) {
         defaultresX = 1600;
         defaultresY = 900;
         reloadcurrentWork();
-    }
-    else if(x2.matches && !x.matches){
+    } else if (x2.matches && !x.matches) {
         resizewindowres2(x2);
-    }
-    else{
+    } else {
         defaultresX = 1600;
         defaultresY = 900;
         reloadcurrentWork();
     }
 }
-function resizewindowres2(x2){
+
+function resizewindowres2(x2) {
     console.log(this.x2);
-    if(x2.matches){
+    if (x2.matches) {
         defaultresX = 400;
         defaultresY = 225;
         reloadcurrentWork();
-    }
-    else if(!x2.matches){
+    } else if (!x2.matches) {
         defaultresX = 800;
         defaultresY = 450;
         reloadcurrentWork();
-    }
-    else if(!x2.matches && x.matches){
+    } else if (!x2.matches && x.matches) {
         resizewindowres(x);
-    }
-    else{
+    } else {
         defaultresX = 1600;
         defaultresY = 900;
         reloadcurrentWork();
@@ -67,31 +62,34 @@ function resizewindowres2(x2){
 }
 
 function work4() {
-    document.getElementById("contentport").innerHTML='<object type="text/html" data="work4/chickenHw_2.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML = '<object type="text/html" data="work4/chickenHw_2.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     document.getElementById("work4").className = "active";
     document.getElementById("work5").className = "";
     document.getElementById("work6").className = "";
     document.getElementById("work7").className = "";
     currentWork = 1;
 }
+
 function work5() {
-    document.getElementById("contentport").innerHTML='<object type="text/html" data="work5/chat.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML = '<object type="text/html" data="work5/chat.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     document.getElementById("work4").className = "";
     document.getElementById("work5").className = "active";
     document.getElementById("work6").className = "";
     document.getElementById("work7").className = "";
     currentWork = 2;
 }
+
 function work6() {
-    document.getElementById("contentport").innerHTML='<object type="text/html" data="work6/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML = '<object type="text/html" data="work6/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     document.getElementById("work4").className = "";
     document.getElementById("work5").className = "";
     document.getElementById("work6").className = "active";
     document.getElementById("work7").className = "";
     currentWork = 3;
 }
+
 function work7() {
-    document.getElementById("contentport").innerHTML='<object type="text/html" data="work7/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
+    document.getElementById("contentport").innerHTML = '<object type="text/html" data="work7/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
     document.getElementById("work4").className = "";
     document.getElementById("work5").className = "";
     document.getElementById("work6").className = "";
@@ -101,18 +99,15 @@ function work7() {
 
 //"Load HTML page in div" ref: https://stackoverflow.com/questions/17636528/how-do-i-load-an-html-page-in-a-div-using-javascript
 
-function reloadcurrentWork(){
+function reloadcurrentWork() {
 
-    if(currentWork == 1){
+    if (currentWork == 1) {
         work4();
-    }
-    else if(currentWork == 2){
+    } else if (currentWork == 2) {
         work5();
-    }
-    else if(currentWork == 3){
+    } else if (currentWork == 3) {
         work6();
-    }
-    else if(currentWork == 4){
+    } else if (currentWork == 4) {
         work7();
     }
 }

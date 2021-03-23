@@ -2,6 +2,9 @@
     font-family: font1;
     src: url(portfolio/font/Athiti-Regular.ttf);
 }
+
+/* Emblem font ref: https://www.w3schools.com/css/css3_fonts.asp */
+
 html{
     scroll-behavior: smooth;
     font-family: font1;

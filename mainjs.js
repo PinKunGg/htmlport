@@ -32,4 +32,4 @@ function GoTopFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-/* Top Button ref: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/* GoToTop Button ref: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */

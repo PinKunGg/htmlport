@@ -66,9 +66,9 @@ function resizewindowres2(x2){
     }
 }
 
-function work34() {
+function work4() {
     document.getElementById("contentport").innerHTML='<object type="text/html" data="work4/chickenHw_2.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    document.getElementById("work34").className = "active";
+    document.getElementById("work4").className = "active";
     document.getElementById("work5").className = "";
     document.getElementById("work6").className = "";
     document.getElementById("work7").className = "";
@@ -76,7 +76,7 @@ function work34() {
 }
 function work5() {
     document.getElementById("contentport").innerHTML='<object type="text/html" data="work5/chat.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    document.getElementById("work34").className = "";
+    document.getElementById("work4").className = "";
     document.getElementById("work5").className = "active";
     document.getElementById("work6").className = "";
     document.getElementById("work7").className = "";
@@ -84,7 +84,7 @@ function work5() {
 }
 function work6() {
     document.getElementById("contentport").innerHTML='<object type="text/html" data="work6/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    document.getElementById("work34").className = "";
+    document.getElementById("work4").className = "";
     document.getElementById("work5").className = "";
     document.getElementById("work6").className = "active";
     document.getElementById("work7").className = "";
@@ -92,7 +92,7 @@ function work6() {
 }
 function work7() {
     document.getElementById("contentport").innerHTML='<object type="text/html" data="work7/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    document.getElementById("work34").className = "";
+    document.getElementById("work4").className = "";
     document.getElementById("work5").className = "";
     document.getElementById("work6").className = "";
     document.getElementById("work7").className = "active";
@@ -101,26 +101,10 @@ function work7() {
 
 //"Load HTML page in div" ref: https://stackoverflow.com/questions/17636528/how-do-i-load-an-html-page-in-a-div-using-javascript
 
-function reschange1(){
-    defaultresX = 1600;
-    defaultresY = 900;
-    reloadcurrentWork();
-}
-function reschange2(){
-    defaultresX = 768;
-    defaultresY = 1024;
-    reloadcurrentWork();
-}
-function reschange3(){
-    defaultresX = 375;
-    defaultresY = 812;
-    reloadcurrentWork();
-}
-
 function reloadcurrentWork(){
 
     if(currentWork == 1){
-        work34();
+        work4();
     }
     else if(currentWork == 2){
         work5();

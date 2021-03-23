@@ -97,6 +97,7 @@ function work7() {
     currentWork = 4;
 }
 
+
 //"Load HTML page in div" ref: https://stackoverflow.com/questions/17636528/how-do-i-load-an-html-page-in-a-div-using-javascript
 
 function reloadcurrentWork() {

@@ -55,6 +55,10 @@ body {
 
 /* Background Video ref: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
 
+#colorhead {
+    background-color: teal;
+}
+
 #contentpadding {
     padding-top: 450px;
 }
@@ -254,7 +258,7 @@ body {
 #profilepicpos {
     position: absolute;
     padding-left: 800px;
-    padding-top: 7px;
+    padding-top: 10px;
 }
 
 #maincontentHome {
@@ -305,6 +309,50 @@ body {
 
 .centerul {
     padding-left: 450px;
+}
+
+.underlinetxt {
+    text-decoration: underline;
+}
+
+.projectimg {
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+.imgcenter {
+    margin: auto;
+}
+
+.projecttitle {
+    font-size: 28px;
+    color: black;
+    text-decoration: underline;
+}
+
+.headerproject {
+    font-size: 20px;
+    color: teal;
+}
+
+.projectdescription {
+    color: cadetblue;
+    font-size: 18px;
+}
+
+.projectcontent {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.projectcontent a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.projectcontent a:hover {
+    color: mediumturquoise;
 }
 
 #tableEducation {
@@ -474,45 +522,6 @@ body {
 /* Top Button ref: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 
 @media only screen and (max-width: 1600px) {
-    #portshowarea {
-        background-color: rgb(43, 43, 43);
-        position: relative;
-        width: 800px;
-        height: 450px;
-        border: 3px solid ghostwhite;
-    }
-    #grid3 {
-        width: 900px;
-        padding: 50px;
-        grid-column: 2 / span 1;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #portshowarea {
-        background-color: rgb(43, 43, 43);
-        position: relative;
-        width: 400px;
-        height: 225px;
-        border: 3px solid ghostwhite;
-    }
-    .portselect a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 12px;
-        background-color: teal;
-    }
-    #grid3 {
-        width: 500px;
-        padding: 50px;
-        grid-column: 2 / span 1;
-    }
-}
-
-@media only screen and (max-width: 1573px) {
     #profileimg {
         width: 270px;
         height: 270px;
@@ -561,6 +570,7 @@ body {
         color: white;
         font-size: 28px;
         padding-left: 10px;
+        padding-right: 10px;
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: teal;
@@ -575,9 +585,30 @@ body {
     .centerul {
         padding-left: 350px;
     }
+    #portshowarea {
+        background-color: rgb(43, 43, 43);
+        position: relative;
+        width: 800px;
+        height: 450px;
+        border: 3px solid ghostwhite;
+    }
+    #grid3 {
+        width: 900px;
+        padding: 50px;
+        grid-column: 2 / span 1;
+    }
+    .projectimg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .projectcontent {
+        text-align: left;
+        margin-left: 0px;
+    }
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1200px) {
     #profileimg {
         width: 300px;
         height: 300px;
@@ -635,6 +666,7 @@ body {
         color: white;
         font-size: 28px;
         padding-left: 5%;
+        padding-right: 5%;
         padding-top: 5px;
         padding-bottom: 5px;
     }
@@ -689,7 +721,32 @@ body {
         width: 500px;
     }
     .centerul {
-        padding-left: 70px;
+        padding-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #portshowarea {
+        background-color: rgb(43, 43, 43);
+        position: relative;
+        width: 400px;
+        height: 225px;
+        border: 3px solid ghostwhite;
+    }
+    .portselect button {
+        border: none;
+        border-right: white solid 1px;
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 5px;
+        font-size: 12px;
+        background-color: teal;
+    }
+    #grid3 {
+        width: 500px;
+        padding: 50px;
+        grid-column: 2 / span 1;
     }
 }
 

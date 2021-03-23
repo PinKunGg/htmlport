@@ -66,25 +66,37 @@ function resizewindowres2(x2){
     }
 }
 
-function work12() {
-    document.getElementById("contentport").innerHTML='<object type="text/html" data="work1/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    currentWork = 1;
-}
 function work34() {
     document.getElementById("contentport").innerHTML='<object type="text/html" data="work4/chickenHw_2.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    currentWork = 2;
+    document.getElementById("work34").className = "active";
+    document.getElementById("work5").className = "";
+    document.getElementById("work6").className = "";
+    document.getElementById("work7").className = "";
+    currentWork = 1;
 }
 function work5() {
     document.getElementById("contentport").innerHTML='<object type="text/html" data="work5/chat.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    currentWork = 3;
+    document.getElementById("work34").className = "";
+    document.getElementById("work5").className = "active";
+    document.getElementById("work6").className = "";
+    document.getElementById("work7").className = "";
+    currentWork = 2;
 }
 function work6() {
     document.getElementById("contentport").innerHTML='<object type="text/html" data="work6/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    currentWork = 4;
+    document.getElementById("work34").className = "";
+    document.getElementById("work5").className = "";
+    document.getElementById("work6").className = "active";
+    document.getElementById("work7").className = "";
+    currentWork = 3;
 }
 function work7() {
     document.getElementById("contentport").innerHTML='<object type="text/html" data="work7/index.html" style="width: ' + defaultresX + 'px; height: ' + defaultresY + 'px;"></object>';
-    currentWork = 5;
+    document.getElementById("work34").className = "";
+    document.getElementById("work5").className = "";
+    document.getElementById("work6").className = "";
+    document.getElementById("work7").className = "active";
+    currentWork = 4;
 }
 
 //"Load HTML page in div" ref https://stackoverflow.com/questions/17636528/how-do-i-load-an-html-page-in-a-div-using-javascript
@@ -108,18 +120,15 @@ function reschange3(){
 function reloadcurrentWork(){
 
     if(currentWork == 1){
-        work12();
-    }
-    else if(currentWork == 2){
         work34();
     }
-    else if(currentWork == 3){
+    else if(currentWork == 2){
         work5();
     }
-    else if(currentWork == 4){
+    else if(currentWork == 3){
         work6();
     }
-    else if(currentWork == 5){
+    else if(currentWork == 4){
         work7();
     }
 }

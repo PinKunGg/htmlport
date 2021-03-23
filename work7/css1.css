@@ -1,9 +1,14 @@
+@font-face{
+    font-family: font1;
+    src: url(../portfolio/font/Athiti-Regular.ttf);
+}
 body{
     background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    font-family: font1;
 }
 #game-container {
 	margin-top: 30px;

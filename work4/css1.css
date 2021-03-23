@@ -1,6 +1,10 @@
+@font-face{
+    font-family: font1;
+    src: url(../portfolio/font/Athiti-Regular.ttf);
+}
 body
 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: font1;
     background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;

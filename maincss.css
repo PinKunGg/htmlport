@@ -1,3 +1,11 @@
+@font-face{
+    font-family: font1;
+    src: url(portfolio/font/Athiti-Regular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+    font-family: font1;
+}
 h2{
     background-color: teal;
     width:max-content;
@@ -36,7 +44,7 @@ body{
 
 /* Background Video ref: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
 
-#contentIntro{
+#contentpadding{
     padding-top: 450px;
 }
 #aboutmetxt{
@@ -45,7 +53,6 @@ body{
 #contentBG{
     background-color: white;
 }
-
 #flexcontainer{
     display: flex;
     justify-content: space-around;
@@ -79,7 +86,6 @@ body{
     position: fixed;
     top: 0;
     width: 99.15%;
-    height: 80px;
     z-index: 99;
 }
 #header a {
@@ -87,20 +93,16 @@ body{
     color: #f2f2f2;
     text-align: center;
     padding: 20px;
-    padding-top: 30px;
     text-decoration: none;
     font-size: 16px;
-    height: 80px;
 }
 #header a:hover {
     background-color: aqua;
-    height: 80px;
     color: black;
 }
 #header a.active {
     background-color:turquoise;
     color: white;
-    height: 80px;
 }
 /* "Top navigation bar" ref https://www.w3schools.com/howto/howto_js_topnav.asp */
 
@@ -150,12 +152,24 @@ body{
 /* DropDownMenu ref: https://www.w3schools.com/css/css_dropdowns.asp */
 
 #footer{
-    padding: 1px;
     left: 0;
     bottom: 0;
     width: 100%;
+}
+#footerbar{
+    padding: 1px;
     background-color:teal;
     color: white;
+}
+#footerbartxt{
+    margin-left: 30px;
+}
+#contact {
+    font-size: 16px;
+}
+#contact a{
+    text-decoration: underline;
+    color: black;
 }
 #firstname{
     font-size: 80px;
@@ -207,7 +221,6 @@ body{
 }
 #maincontentHome{
     padding-top: 100px;
-    padding-bottom: 50;
 }
 #maincontentPort{
     padding-top: 0px;
@@ -225,8 +238,12 @@ body{
     font-weight: bold;
     text-align: center;
 }
-#TitlePadding{
-    padding-top: 200px;
+#titlepadding{
+    padding-top: 300px;
+}
+#titlebg{
+    background-color: white;
+    padding-bottom: 1px;
 }
 .bgimg{
     top: 0;
@@ -239,12 +256,47 @@ body{
 .centertxt{
     text-align: center;
 }
-table, td{
-    /* border: 1px solid black; */
+.centerul{
+    padding-left: 450px;
+}
+#tableEducation{
+    border-collapse: collapse;
+}
+#tableEducation td{
     border-collapse: collapse;
     padding: 10px;
     width: 800px;
     margin: auto;
+}
+#tableSoftwareSkill1{
+    width: 500px;
+    margin: auto;
+    border-collapse: collapse;
+}
+#tableSoftwareSkill1 td{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    padding: 10px;
+}
+#tableSoftwareSkill2{
+    width: 350px;
+    margin: auto;
+    border-collapse: collapse;
+}
+#tableSoftwareSkill2 td{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    padding: 10px;
+}
+#tableGitHubBitBucket{
+    width: 400px;
+    margin: auto;
+    border-collapse: collapse;
+}
+#tableGitHubBitBucket td{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    padding: 10px;
 }
 .button{
     background-color: cornflowerblue;
@@ -299,28 +351,25 @@ table, td{
     color: rgb(255, 255, 255);
     background-color: rgb(0, 132, 255);
 }
-#skillcontent{
-    text-align: center;
-}
 .portselect{
     padding-left: 100px;
     width: 500px;
-    overflow:hidden;
 }
-.portselect a {
+.portselect button {
+    border: none;
+    border-right: white solid 1px;
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 10px;
-    text-decoration:none;
     font-size: 16px;
     background-color: teal;
 }
-.portselect a:hover {
+.portselect button:hover {
     background-color: aqua;
     color: black;
 }
-.portselect a.active {
+.portselect button.active {
     background-color:turquoise;
     color: white;
 }
@@ -443,7 +492,6 @@ table, td{
     }
     #maincontentHome{
         padding-top: 30px;
-        padding-bottom: 30px;
     }
     #maincontentPort{
         padding-top: 0;
@@ -464,6 +512,9 @@ table, td{
         width: 900px;
         padding: 50px;
         grid-column: 2 / span 1;
+    }
+    .centerul{
+        padding-left: 350px;
     }
 }
 @media only screen and (max-width: 1170px)
@@ -512,12 +563,11 @@ table, td{
         padding-top: 10px;
         padding-left: 0px;
     }
-    #contentIntro{
+    #contentpadding{
         padding-top: 200px;
     }
     #maincontentHome{
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 30px;
     }
     #maincontentPort{
         padding-top: 0;
@@ -533,6 +583,18 @@ table, td{
     }
     #grid1{
         width: 700px;
+    }
+    .centerul{
+        padding-left: 250px;
+    }
+    #tableSoftwareSkill1{
+        width: 100px;
+    }
+    #tableSoftwareSkill2{
+        width: 100px;
+    }
+    #tableGitHubBitBucket{
+        width: 100px;
     }
 }
 @media only screen and (max-width: 970px)
@@ -554,8 +616,7 @@ table, td{
         padding-top: 10px;
     }
     #maincontentHome{
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 10px;
     }
     #maincontentPort{
         padding-top: 0;
@@ -572,11 +633,8 @@ table, td{
     #grid1{
         width: 500px;
     }
-    table, td{
-        border-collapse: collapse;
-        padding: 10px;
-        width: 600px;
-        margin: auto;
+    .centerul{
+        padding-left: 70px;
     }
 }
 @media only screen and (max-width: 750px)
@@ -623,7 +681,6 @@ table, td{
     }
     #maincontentHome{
         padding-top: 10px;
-        padding-bottom: 10px;
     }
     #maincontentPort{
         padding-top: 0;
@@ -640,10 +697,7 @@ table, td{
     #grid1{
         width: 300px;
     }
-    table, td{
-        border-collapse: collapse;
-        padding: 10px;
-        width: 300px;
-        margin: auto;
+    .centerul{
+        padding-left: 70px;
     }
 }

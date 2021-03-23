@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="maincss.css">
-    <title>HTML PORTFOLIO</title>
+    <title>Nattapat Suracheep Portfolio</title>
 </head>
 <body>
     <button onclick="GoTopFunction()" id="GoToTopButton" title="Go to top">^</button>
@@ -23,21 +23,23 @@
         </div>
     </div>
     <!-- MAIN CONTENT -->
-    <div id="TitlePadding">
-        <h1 class="bigtopichead">Portfolio</h1>
-        <img src="portfolio/pic/code_pic_01.jpg" class="bgimg">
+    <div id="titlepadding">
+        <div id="titlebg">
+            <h1 class="bigtopichead">Portfolio</h1>
+            <img src="portfolio/pic/code_pic_01.jpg" class="bgimg">
+        </div>
     </div>
+    <div id="contentBG">
     <div id="maincontentPort" class="contentcolor2">
         <div id="flexcontainer">
             <div id="gridcontainer">
                 <div id="grid3">
                     <div id="portcontainer">
                         <div class="portselect">
-                            <a href="#" onclick="work12()">Work 1 & 2</a>
-                            <a href="#" onclick="work34()">Work 3 & 4</a>
-                            <a href="#" onclick="work5()">Work 5</a>
-                            <a href="#" onclick="work6()">Work 6</a>
-                            <a href="#" onclick="work7()">Work 7</a>
+                            <button type="button" onclick="work34()" id="work34">Chicken satay</button>
+                            <button type="button" onclick="work5()" id="work5">Blog</button>
+                            <button type="button" onclick="work6()" id="work6">Register and login</button>
+                            <button type="button" onclick="work7()" id="work7">Square game</button>
                         </div>
                     </div>
                     <div id="portcontainer">
@@ -51,7 +53,32 @@
     </div>
     <!-- FOOTER -->
     <div id="footer">
-        <p>NATTAPAT SURACHEEP PORTFOLIO.</p>
+        <div id="contact">
+            <div class="contentcolor1">
+                <div id="flexcontainer">
+                    <div id="grid-container">
+                        <div id="grid1">
+                            <h2>Contact</h2>
+                            <table>
+                                <tr>
+                                    <td>Facebook : Nattapat Suracheep</td>
+                                </tr>
+                                <tr>
+                                    <td>Email : nattapat_suracheep@hotmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>GitHub : <a href="https://github.com/PinKunGg" target="_blank">https://github.com/PinKunGg</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerbar">
+            <p id="footerbartxt">NATTAPAT SURACHEEP PORTFOLIO.</p>
+        </div>
+    </div>
     </div>
     <script src="mainjs.js"></script>
     <script src="portjs.js"></script>

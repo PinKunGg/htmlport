@@ -1,3 +1,7 @@
+@font-face{
+    font-family: font1;
+    src: url(../portfolio/font/Athiti-Regular.ttf);
+}
 body
 {
     background-color: cornflowerblue;
@@ -5,6 +9,7 @@ body
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: font1;
 }
 .header
 {

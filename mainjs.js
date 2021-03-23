@@ -1,11 +1,13 @@
-window.onload = hindNavbar;
+window.onload = pageload;
 
 //Get the button
 var ToTopButton = document.getElementById("GoToTopButton");
 var NavBar = document.getElementById("header");
 var VerNavBar = document.getElementById("dropdownheader");
 
-function hindNavbar(){
+var contactelement = document.getElementById("contact");
+
+function pageload(){
     NavBar.style.display = "none";
     VerNavBar.style.display = "block";
 }

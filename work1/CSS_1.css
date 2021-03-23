@@ -63,7 +63,11 @@ table, th, td
 body
 {
     background-color: rgb(200, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: font1;
+}
+@font-face{
+    font-family: font1;
+    src: url(../portfolio/font/Athiti-Regular.ttf);
 }
 h3, body > h2
 {

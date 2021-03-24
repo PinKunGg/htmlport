@@ -100,8 +100,9 @@ body {
     grid-column: 2 / span 1;
 }
 
-#gird4 {
-    grid-column: 1 / span 1;
+#grid4 {
+    width: 1100px;
+    grid-column: 2 / span 1;
 }
 
 #header {
@@ -582,6 +583,9 @@ body {
         padding: 50px;
         grid-column: 2 / span 1;
     }
+    #grid4 {
+        width: 900px;
+    }
     .centerul {
         padding-left: 350px;
     }
@@ -720,6 +724,9 @@ body {
     #grid1 {
         width: 500px;
     }
+    #grid4 {
+        width: 500px;
+    }
     .centerul {
         padding-left: 150px;
     }
@@ -806,6 +813,9 @@ body {
         padding-bottom: 5px;
     }
     #grid1 {
+        width: 300px;
+    }
+    #grid4 {
         width: 300px;
     }
     .centerul {

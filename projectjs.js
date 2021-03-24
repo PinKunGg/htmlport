@@ -6,6 +6,7 @@ var VerNavBar = document.getElementById("dropdownheader");
 var currentWork = 0;
 
 function pageload() {
+    loadfooter();
     unityproject();
     NavBar.style.display = "none";
     VerNavBar.style.display = "block";

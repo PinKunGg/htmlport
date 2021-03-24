@@ -17,6 +17,7 @@ var defaultresY = 900;
 var currentWork = 0;
 
 function pageload() {
+    loadfooter();
     work7();
     resizewindowres(x);
     NavBar.style.display = "none";

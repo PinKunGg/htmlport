@@ -19,42 +19,40 @@ var currentWork = 0;
 function pageload() {
     loadfooter();
     work7();
-    resizewindowres(x);
+    resizewindowres();
     NavBar.style.display = "none";
     VerNavBar.style.display = "block";
 }
 
-function resizewindowres(x) {
-    console.log(this.x);
-    if (x.matches) {
+function resizewindowres() {
+    console.log("x = " + x.matches);
+    if (x.matches && !x2.matches) {
         defaultresX = 800;
         defaultresY = 450;
         reloadcurrentWork();
-    } else if (!x.matches) {
+    } else if (!x.matches && !x2.matches) {
         defaultresX = 1600;
         defaultresY = 900;
         reloadcurrentWork();
-    } else if (x2.matches && !x.matches) {
-        resizewindowres2(x2);
     } else {
-        defaultresX = 1600;
-        defaultresY = 900;
-        reloadcurrentWork();
+        resizewindowres2();
     }
 }
 
-function resizewindowres2(x2) {
-    console.log(this.x2);
-    if (x2.matches) {
+function resizewindowres2() {
+    console.log("x2 = " + x2.matches);
+    if (x2.matches && x.matches) {
         defaultresX = 400;
         defaultresY = 225;
         reloadcurrentWork();
-    } else if (!x2.matches) {
+    } else if (!x2.matches && x.matches) {
         defaultresX = 800;
         defaultresY = 450;
         reloadcurrentWork();
-    } else if (!x2.matches && x.matches) {
-        resizewindowres(x);
+    } else if (x2.matches && !x.matches) {
+        defaultresX = 400;
+        defaultresY = 225;
+        reloadcurrentWork();
     } else {
         defaultresX = 1600;
         defaultresY = 900;
